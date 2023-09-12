@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src='action.js'>
+        //window.onabort(alert("I am on herer"))
+</script>
+<script src='jquery.min.js' ></script>
+<script type="text/javascript">
+let name = "Akinola Olabisi"
+//var header = h3.getAttribute("data-testid");
+     $(function(){
+
+$(`<p>Hi there! ${time}</p>`).insertAfter("#CurrentDayOfTheWeek");
+$(`<span>${time}</span>`).insertAfter("h3[data-testid = CurrentDayOfTheWeek]");
+$(`<span>${utcTime}</span>`).insertAfter("h3[data-testid = CurrentUTCTime]");
+
+
+});
+
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<h1 data-testid = "slackUserName">Akinola</h1> 
+<img src="mypix.jpeg" alt="Akinola" data-testid="slackDisplayImage"/> 
+
+<h3 data-testid="CurrentDayOfTheWeek">Current day of the Week</h3>
+<h3 data-testid ="CurrentUTCTime">Current UTC time in milliseconds</h3>
+<h2 data-testid="myTrack">I am currently on <span>Front-end Track</span> in Zuri Intern Training </h2>
+<h2 data-testid="gitHubUrl">This task can be accessed in my GitHuub repository</h2><a target = "_blank" href="www.github.com/akeenola">task on my details</a>
+</body>
+</html>
