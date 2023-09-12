@@ -28,7 +28,7 @@ $(`<span>${utcTime}</span>`).insertAfter("h3[data-testid = CurrentUTCTime]");
 <h1 data-testid = "slackUserName">Akinola</h1> 
 <img src="mypix.jpg" alt="Akinola" data-testid="slackDisplayImage"/> 
 
-<h3 data-testid="CurrentDayOfTheWeek">Current day of the Week</h3>
+<h3 id="CurrentDayOfTheWeek" onload = "getDate()">Current day of the Week</h3>
 <h3 data-testid ="CurrentUTCTime">Current UTC time in milliseconds</h3>
 <h2 data-testid="myTrack">I am currently on <span>Front-end Track</span> in Zuri Intern Training </h2>
 <h2 data-testid="gitHubUrl">This task can be accessed in my GitHuub repository</h2><a target = "_blank" href="www.github.com/akeenola">task on my details</a>
